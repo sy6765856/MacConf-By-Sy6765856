@@ -6,6 +6,27 @@ hs.hotkey.bind(hammerSpoonKey, "R", function()
   hs.reload()
 end)
 
+hs.hotkey.bind(hammerSpoonKey, "T", function ()
+  hs.application.open('/Applications/iTerm.app')
+end
+)
+hs.hotkey.bind(hammerSpoonKey, "C", function ()
+  hs.application.open('/Applications/Google Chrome 2.app')
+end
+)
+hs.hotkey.bind(hammerSpoonKey, "M", function ()
+  hs.application.open('/Applications/QQMusic.app')
+end
+)
+hs.hotkey.bind(hammerSpoonKey, "P", function ()
+  hs.application.open('/Applications/PhpStorm.app')
+end
+)
+hs.hotkey.bind(hammerSpoonKey, "S", function ()
+  hs.application.open('/Applications/Sublime Text.app')
+end
+)
+
 
 hs.hotkey.bind(hammerSpoonKey, "Right", function()
   local win = hs.window.focusedWindow()
@@ -45,6 +66,20 @@ hs.hotkey.bind(hammerSpoonKey, "Up", function ()
   f.w = max.w
   f.h = max.h / 2
   win:setFrame(f)
+end,
+function ()
+end,
+function ()
+  local win = hs.window.focusedWindow()
+  local f = win:frame()
+  local screen = win:screen()
+  local max = screen:frame()
+
+  f.x = max.x
+  f.y = max.y
+  f.w = max.w
+  f.h = max.h
+  win:setFrame(f)
 end
 )
 
@@ -59,40 +94,6 @@ hs.hotkey.bind(hammerSpoonKey, "Down", function ()
   f.w = max.w
   f.h = max.h / 2
   win:setFrame(f)
-end
-)
-
-hs.hotkey.bind(hammerSpoonKey, "F", function ()
-  local win = hs.window.focusedWindow()
-  local f = win:frame()
-  local screen = win:screen()
-  local max = screen:frame()
-
-  f.x = max.x
-  f.y = max.y
-  f.w = max.w
-  f.h = max.h
-  win:setFrame(f)
-end
-)
-hs.hotkey.bind(hammerSpoonKey, "T", function ()
-  hs.application.open('/Applications/iTerm.app')
-end
-)
-hs.hotkey.bind(hammerSpoonKey, "C", function ()
-  hs.application.open('/Applications/Google Chrome 2.app')
-end
-)
-hs.hotkey.bind(hammerSpoonKey, "M", function ()
-  hs.application.open('/Applications/QQMusic.app')
-end
-)
-hs.hotkey.bind(hammerSpoonKey, "P", function ()
-  hs.application.open('/Applications/PhpStorm.app')
-end
-)
-hs.hotkey.bind(hammerSpoonKey, "S", function ()
-  hs.application.open('/Applications/Sublime Text.app')
 end
 )
 hs.alert.show("hammer reload spoon")
