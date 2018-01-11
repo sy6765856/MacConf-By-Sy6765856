@@ -1,12 +1,15 @@
 local hammerSpoonKey = {"cmd", "alt", "ctrl"}
 hs.hotkey.bind(hammerSpoonKey, "Q", function() hs.application.open('/Applications/QQ.app') end)
+hs.hotkey.bind(hammerSpoonKey, "W", function() hs.application.open('/Applications/企业微信.app') end)
 hs.hotkey.bind(hammerSpoonKey, "R", function() hs.reload() end)
 hs.hotkey.bind(hammerSpoonKey, "T", function() hs.application.open('/Applications/iTerm.app') end)
 hs.hotkey.bind(hammerSpoonKey, "P", function() hs.application.open('/Applications/PhpStorm.app') end)
+hs.hotkey.bind(hammerSpoonKey, "A", function() hs.application.open('/Applications/爱奇艺.app') end)
 hs.hotkey.bind(hammerSpoonKey, "S", function() hs.application.open('/Applications/Sublime Text.app') end)
 hs.hotkey.bind(hammerSpoonKey, "F", function() hs.application.open('/System/Library/CoreServices/Finder.app') end)
 hs.hotkey.bind(hammerSpoonKey, "X", function() hs.application.open('/Applications/System Preferences.app') end)
 hs.hotkey.bind(hammerSpoonKey, "C", function() hs.application.open('/Applications/Google Chrome 2.app') end)
+hs.hotkey.bind(hammerSpoonKey, "V", function() hs.application.open('/Applications/QQLive.app') end)
 hs.hotkey.bind(hammerSpoonKey, "M", function() hs.application.open('/Applications/QQMusic.app') end)
 
 hs.hotkey.bind(hammerSpoonKey, "Right", function()
