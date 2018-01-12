@@ -3,6 +3,7 @@ hs.hotkey.bind(hammerSpoonKey, "Q", function() hs.application.open('/Application
 hs.hotkey.bind(hammerSpoonKey, "W", function() hs.application.open('/Applications/企业微信.app') end)
 hs.hotkey.bind(hammerSpoonKey, "R", function() hs.reload() end)
 hs.hotkey.bind(hammerSpoonKey, "T", function() hs.application.open('/Applications/iTerm.app') end)
+hs.hotkey.bind(hammerSpoonKey, "I", function() hs.application.open('/Applications/Utilities/Activity Monitor.app') end)
 hs.hotkey.bind(hammerSpoonKey, "P", function() hs.application.open('/Applications/PhpStorm.app') end)
 hs.hotkey.bind(hammerSpoonKey, "A", function() hs.application.open('/Applications/爱奇艺.app') end)
 hs.hotkey.bind(hammerSpoonKey, "S", function() hs.application.open('/Applications/Sublime Text.app') end)
